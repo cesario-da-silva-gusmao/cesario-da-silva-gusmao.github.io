@@ -1,0 +1,692 @@
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* 
+body {
+
+    height: 3000px;
+} */
+
+.header {
+
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background: red;
+    z-index: 2;
+
+}
+
+.header .head-menu {
+
+    width: 80%;
+    height: 60px;
+    /* border: 2px solid red; */
+    margin: auto;
+    position: relative;
+}
+
+.header .head-menu .box-head-foto {
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    /* border: 2px solid red; */
+
+    background-image: linear-gradient( rgba(0, 0, 0, .3),
+    rgba(255, 0, 0, .4),
+     rgba(255, 255, 0, .5)), 
+     url('image/IOB.png'); 
+     z-index: 10; 
+
+  
+    background-size: cover;
+}
+
+.header .head-menu ul {
+
+    line-height: 59px;
+    position: absolute;
+    display: inline-block;
+    right: 0;
+
+}
+
+.active {
+
+    background: yellow;
+}
+
+.header .head-menu ul li {
+
+    display: inline-block;
+    /* padding: 12px 15px; */
+    /* border: 1px solid red; */
+}
+
+
+
+.header .head-menu ul li a {
+
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    /* border: 1px solid red; */
+    padding: 18px;
+}
+
+
+
+        /* Parte Hover husi menu nia */
+
+  .header .head-menu ul li:hover {
+
+      background: rgb(55, 55, 71);
+
+        }
+
+
+
+
+                /* Parte Husi Container */
+
+.container {
+
+    position: relative;
+    top: 60px;
+    width: 100%;
+    /* height: 500px; */
+    /* border: 3px solid yellow; */
+    /* z-index: 5; */
+}
+
+        /* Parte Husi box Foto */
+
+.box-img {
+
+    position: relative;
+   
+    /* top: 60px; */
+    width: 100%;
+    border-top: 3px solid rgb(72, 184, 228);
+/*     
+    background-image: linear-gradient( rgba(0, 0, 0, .3),
+    rgba(255, 0, 0, .4),
+     rgba(255, 255, 0, .5)), 
+     url('/imgweb/5.jpg');  */
+            
+     background-image: url('image/ol.jpg');
+                  
+            
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+        /* parte husi Welcome box */
+
+.welcome-box {
+
+    background: rgba(121, 50, 50, 0.3);
+    padding: 40px 35px;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.welcome-box h1 {
+
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin: 6px;
+}
+
+.welcome-box p {
+
+    color: tomato;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+/* Box img hover nia */
+
+.welcome-box:hover {
+
+    background: linear-gradient(
+
+        rgba(3, 240, 3, .9),
+        rgb(16, 204, 47),
+        rgb(6, 114, 6)
+                        );
+
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+
+.welcome-box:hover h1{
+
+    box-shadow: 1px 1px 2px white,
+                -1px -1px 2px white                        
+                        ;                    
+    }
+
+.welcome-box:hover p {
+
+    box-shadow: 1px 1px 2px white,
+    -1px -1px 2px white                        
+        ;
+}
+    
+
+
+
+            /* Parte Husi Info */
+
+.info  {
+
+    background: rgb(46, 2, 46);
+    width: 100%;
+    height: 60px;
+    text-align: center;
+}
+
+.info a {
+
+    text-decoration: none;
+    color: red;
+    line-height: 60px;
+    color: var(--color);
+    border: 2px solid var(--color);
+    border-radius: 5px;
+    padding: 10px 25px;
+    transition: 1s;
+}
+
+        /* Parte Husi Imfo a hover */
+
+.info a:hover {
+
+    box-shadow: inset 20px 0 2px var(--color),
+                inset -20px 0 2px var(--color)
+    ;
+}
+
+
+        /* Parte Husi Shocase */
+
+.showcase {
+
+    padding: 20px 0 0 0;
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: row;
+}
+
+.showcase .showcase-img {
+
+    padding: 10px 20px 0 10px;
+}
+
+.showcase .showcase-img img {
+
+    width: 100%;
+}
+
+.showcase .showcase-text p {
+
+    text-align: justify;
+    padding: 0 20px 0 10px;
+}
+
+.showcase .showcase-text h1 {
+
+    padding: 0 20px 0 10px;
+}
+
+
+
+            /* Info Aditional */
+
+.info-aditional {
+
+    padding: 10px;
+}
+
+.info-aditional h1 {
+
+    text-align: center;
+    padding: 0 0 5px 0;
+}
+
+.info-aditional p {
+
+    text-align: center;
+    padding: 15px;
+
+}
+
+
+        /* Parte Imagen informasaun Adisional*/
+
+.box-adisional {
+
+    /* border: 2px solid greenyellow; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+  
+}
+
+.box-img-aditional {
+
+    /* border: 2px solid red; */
+    width: 253px;
+    /* height: 200px; */
+    filter: grayscale(.9);
+    transition: .5s;
+}
+
+
+.box-img-aditional:hover {
+
+    filter: grayscale(0);
+    transform: scale(1.1);
+    color: rgb(167, 247, 8);
+}
+
+
+
+.box-adisional img {
+
+    width: 250px;
+}
+
+.box-adisional h3, p {
+
+    text-align: center;
+    
+}
+
+ 
+
+
+
+        /* Footer */
+
+
+footer {
+
+    position: relative;
+     /*bottom: 0;*/
+     
+    top: 100%;
+    width: 100%;
+    padding: 20px;
+    background: grey;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    }
+
+
+
+
+
+
+
+        /* STYLE BA PERFIL NIA*/
+
+.container-perfile {
+
+    position: relative;
+    top: 60px;
+    border: 2px solid red;
+
+}
+
+
+
+
+        /* STYLE BA PERFIL NIA*/
+
+/*.container-imagen {
+
+    position: relative;
+    top: 60px;*/
+    
+/*}*/
+
+.box-img-perfile{
+    border: 2px solid gold;
+    background-image: url('image/go.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    height: 150vh;
+
+}
+
+.box-img-perfile4{
+    border: 2px solid gold;
+    background-image: url('image/fo.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    height: 150vh;
+
+}
+.container-historia {
+
+    position: relative;
+    top: 60px;
+}
+.kotak-img-perfile{
+    width: 300px;
+    height: 300px;
+    border: 3 px solid red;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+
+}
+.kotak-img-perfile .kotak-foto-perfile{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    background-image: url('image/go.jpg');
+    margin-bottom: 20px;
+    position: relative;
+    background-size: cover;
+}
+
+.kotak-img-perfile h2{
+    padding: 5px 0;
+    color: white;
+    /*border: 2px solid red;*/
+    transition: 1s cubic-bezier(0.5, 1.6, 0.47, 0.46);
+
+}
+
+.kotak-img-perfile h2:hover{
+   /* background: blue;*/
+
+    box-shadow: inset 0 20px 5px 0 rgba(0, 30, 10, 1);
+}
+
+.kotak-img-perfile p{
+    color: blue;
+}
+.kotak-biografia{
+    width: 400px;
+    height: 400px;
+    /*border: 2px solid blue;*/
+}
+.kotak-biografia h1{
+    color: white;
+    font-weight: bold;
+    font-family: arial;
+    padding: 5px;
+    text-align: center;
+}
+
+.kotak-biografia p{
+
+    color: white;
+    padding-top: 5px;
+    text-align: justify;
+}
+
+.kotak-biografia table .td1{
+
+    color: white;
+    font-weight: bold;
+    font-family: arial;
+    padding-top: 5px;
+
+
+}
+.kotak-biografia table .td2{
+ 
+    color: white;
+    /*font-weight: bold;*/
+    font-family: arial;
+
+}
+
+/*style parte  Bemvindo loke nian*/
+
+
+.benvindo-text22{
+    /*border: 2px solid red;*/
+    top: 80px;
+    position: relative;
+    width: 80%;
+    margin: auto;
+
+}
+
+h2.Bemvindo {
+    text-align: center;
+    padding: 15px;
+    border: 2px solid blue;
+    cursor: pointer;
+    margin: 10px  auto ;
+    max-width: 700px;
+    /*top: 80px;*/
+    /*position: relative;*/
+    transition: 1s cubic-bezier(0.5, 1.6, 0.47, 0.46)
+} 
+
+h2.Bemvindo:hover{
+    box-shadow: inset 0 60px 5px 0 blue;
+}
+
+/*style parte  Bemvindo taka nian*/
+
+
+
+/*fo style ba parte iha imagen nian*/
+
+.container-imagen{ 
+    width: 100%;
+    /*height: 1500px;*/
+    /*border: 2px solid black;*/
+    padding: 3px;
+    position: relative;
+    top: 61px;
+    padding: 40px 0 0 0;
+    /*margin: auto;*/
+    /*background-image: linear-gradient ();*/
+    background: linear-gradient(#1E9600, #FFF200, #FF0000);
+}
+.img-container-imagen1{
+
+    border: 2px solid black;
+    padding: 3px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+
+
+}
+
+.img-container-imagen1 .imagen-satu{
+
+    width: 300px;
+    height: 200px;
+    /*border:2px solid yellow;*/
+    margin: 5px;
+    transition: 1s cubic-bezier(1, 0.46, 0.21, 0.74);
+
+}
+
+.img-container-imagen1 .imagen-satu h2{
+    max-width: 200px;
+}
+
+.img-container-imagen1 .imagen-satu img{
+    width: 80%;
+    filter: grayscale(1);
+    border-radius: 3px;
+}
+.img-container-imagen1 .imagen-satu:hover{
+
+    /*filter: grayscale(0);*/
+    transform: scale(1.4);
+    z-index: 2;
+
+}
+.img-container-imagen1 .imagen-satu:hover img{
+    filter: grayscale(0);
+
+}
+.img-container-imagen1 .imagen-satu:hover h2{
+    color: yellow;
+    /*background-image: rgba(100, 100, 100, .5);*/
+    text-align: center;
+    background: red;
+}
+    /*style imagen taka nian mak nee*/
+
+
+/*parte loke husi box-img Historia nian*/
+
+.box-img-historia{
+    width: 100%;
+    height: 60vh;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 80px;
+     background: linear-gradient(
+
+        rgba(3, 240, 3, .3),
+        rgba(16, 204, 47, .3),
+        rgba(6, 114, 6, .3)
+                        );
+
+}
+.box-img-historia img{
+
+    width: 80%;
+}
+
+/*parte taka husi historia nian*/
+
+/*parte loke husi container historia*/
+
+
+.container-historia{
+    width: 100%;
+    border: 5px solid greenyellow;
+    position: relative;
+    top: 500px;
+    /*display: flex;*/
+    padding: 3px;
+    background: whitesmoke;
+    overflow: auto;
+}
+
+.container-historia::after{
+
+    content: "";
+    position: absolute;
+    clear: both;
+}
+
+.foto-historia::after{
+
+    content: "";
+    position: absolute;
+    clear: both;
+}
+
+.box-h1-p::after{
+
+    content: "";
+    position: absolute;
+    clear: both;
+} 
+
+.foto-historia{
+    width: 350px;
+    height: 250px;
+    border: 2px solid red;
+    /*margin-right: 15px;*/
+    margin: 10px;
+    float: left;
+    padding: 2px;
+
+}
+
+
+.foto-historia img{
+    width: 345px;
+    height: 245px;
+}
+
+.box-h1-p{
+    border: 2px solid black;
+
+
+}
+.box-h1-p p, h1{
+    padding: 5px;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
